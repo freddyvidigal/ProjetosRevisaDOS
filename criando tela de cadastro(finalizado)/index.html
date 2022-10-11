@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validador de formulario</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src=".//img/istockphoto-1251451966-1024x1024.jpg" alt="">
+        </div>
+        <div class="rightside">
+            <h1>Crie uma conta</h1>
+
+            <form  method="POST"action="cadastro.php" class="freddyvalidator">
+                <label for="">
+                    Seu mome: <br/>
+                    <input type="text" name="name" data-rules = 'required|min=2'/>
+                </label>
+                <label for="">
+                    Seu email: <br/>
+                    <input type="text" name="email" data-rules = 'required|email'/>
+                </label>
+                <label for="">
+                    Sua senha: <br/>
+                    <input type="password" name="password" data-rules = 'required|min=6'/>
+                </label>
+                <label for="">
+                    <input type="submit" value="Cadastre-se"/>
+                </label>
+
+
+
+            </form>
+            <div>
+                Já tem uma conta <a href="">Faça Login</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
