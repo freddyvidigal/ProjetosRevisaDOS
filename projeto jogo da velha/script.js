@@ -39,11 +39,12 @@ function reset(){
     for(let i in square){
         square[i] = '';
     }
-        playing = true;
+       
 
     renderSquare();
     renderInfo();
 
+ playing = true;
 }
     function renderSquare(){
         for(let i in square) {
@@ -51,6 +52,8 @@ function reset(){
             if(square[i] !== '') {
                 item.innerHTML = square[i];
             
+        } else {
+            item.innerHTML = '';
         }
         checkGame();
         
