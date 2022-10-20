@@ -71,11 +71,11 @@ function togglePlayer(){
     renderInfo();
 }
 function checkGame(){
-    if(checkWinnnerFor('X')) {
-        warning = 'O "X" venceu';
+    if(checkWinnnerFor('x')) {
+        warning = 'o "x" venceu';
         playing = false;
-    } else if(checkWinnnerFor("O")){
-        warning = 'O "O" venceu';
+    } else if(checkWinnnerFor("o")){
+        warning = 'o "o" venceu';
         playing = false;
     } else if(isFull()){
         warning = 'Deu empate';
