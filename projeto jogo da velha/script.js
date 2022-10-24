@@ -93,7 +93,7 @@ function checkWinnnerFor(player){
         'a3,b3,c3',
 
         'a1,b2,c3',
-        '13,b2,c1'
+        'a3,b2,c1'
 
     ];
 
